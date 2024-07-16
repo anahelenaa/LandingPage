@@ -144,6 +144,7 @@ header {
   width: auto;
   padding: 20px;
   margin-left: 20px;
+  margin-top: 30px;
 }
 
 .produto h3 {
@@ -167,4 +168,17 @@ header {
 
 .dados-produto ul li {
   padding: 10px;
+}
+.sticky_infoProdutos{
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky_infoProdutos+.conteudo {
+  transition: 0.5s;
+  padding-top: 105px;
+}
+.sticky_remove{
+  opacity: 0;
+  position: unset;
 }
