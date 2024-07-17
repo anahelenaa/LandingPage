@@ -46,3 +46,23 @@ function aoScrollar() {
 window.onscroll = function () {
   aoScrollar();
 };
+
+const linkQuemSomos = document.getElementById("link_quem_somos");
+const linkNossosProdutos = document.getElementById("link_nossos_produtos");
+const linkOndeComprar = document.getElementById("link_onde_comprar");
+
+const quemSomos = document.getElementById("quem-somos");
+const nossosProdutos = document.getElementById("nossos-produtos");
+const ondeComprar = document.getElementById("onde-comprar");
+
+linkNossosProdutos.addEventListener('click', function(){
+  nossosProdutos.scrollIntoView({block: 'start', behavior: "smooth"});
+});
+
+linkQuemSomos.addEventListener('click', function(){
+  quemSomos.scrollIntoView({block: 'center', behavior: "smooth"});
+});
+
+linkOndeComprar.addEventListener('click', function(){
+  ondeComprar.scrollIntoView({block: 'end', behavior: "smooth"});
+});

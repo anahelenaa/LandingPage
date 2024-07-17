@@ -29,8 +29,14 @@ header {
 
 .opcoes-container {
   margin-right: 2rem;
-  margin-top: 2.4rem;
+  margin-top: 1.5rem;
 
+}
+
+header ul{
+ display: flex;
+ list-style: none;
+ margin-bottom: 20px;
 }
 
 .opcao {
